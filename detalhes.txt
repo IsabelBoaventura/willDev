@@ -1,0 +1,43 @@
+Onde localizar as informações
+
+
+	https://www.youtube.com/watch?v=OgE4qUyoFAo
+
+Onde localizar a documentação da API
+
+	https://viacep.com.br/
+
+Criamos o arquivo "composer.json" ;
+No terminal , na pasta onde esta o arquivo criado, iremos instalar o composer:
+
+	composer install
+
+Criar a pasta "app" a mesma que informamos no arquivo composer.json, que seria o principal do nosso projeto;
+Criar o arquivo index.php
+
+Dentro da pasta app, criar a pasta WebService, e dentro criar ViaCEP.php
+
+
+
+Arquivo de DEBUG para o php 
+
+	   echo "<pre>";
+           print_r( $cep );
+           echo "</pre>"; exit;
+
+
+Debug do  codigo
+
+	   echo "<pre>";
+           print_r( $argv );
+           echo "</pre>"; exit;
+Onde esta variavel $argv  não é criada dentro do sistema,  mas responde para o sistema o nome do fonte,  e algum argumento caso tenha sido passado;
+
+Quando se trabalha com o terminal pode se usar esta função para verificar se as informações corretas estao sendo passadas:
+
+	if( !isset($argv[1])){
+    		die("CEP não definido\n");
+	}
+
+Podendo testar usando no Terminal assim: php index.php 77001432
+
